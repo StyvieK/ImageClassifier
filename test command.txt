@@ -1,0 +1,4 @@
+python train.py flowers --save_dir "CheckPoint" --GPU --epochs 10
+
+python predict.py './flowers/test/28/image_05270.jpg' './CheckPoint/ModelCheckpoint.pth' --top_k "5" --GPU --category_names "cat_to_name.json"
+python predict.py './flowers/test/28/image_05270.jpg' './CheckPoint/ModelCheckpoint.pth' --top_k "3" 
